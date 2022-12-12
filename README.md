@@ -6,8 +6,8 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 <h2 align="center">Links</h2>
 
-<!-- - Solution URL: [Order Summary Component (SASS + Mobile first + BEM) | Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-sass-mobile-first-bem-BlfUdr5oBv)
-- Live Site URL: [https://order-summary-component-melvinhdz.vercel.app/](https://order-summary-component-melvinhdz.vercel.app/) -->
+- Solution URL: [Fylo landing page with two column layout (SASS + Mobile-first + BEM) | Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-WRPVqmFCKD)
+- Live Site URL: [https://fylo-landing-page-with-two-column-layout-hdez.vercel.app/](https://fylo-landing-page-with-two-column-layout-hdez.vercel.app/)
 
 <br>
 
