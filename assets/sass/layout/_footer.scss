@@ -1,0 +1,140 @@
+.footer {
+  background-color: $theme-dark-blue-color;
+  color: $theme-white-color;
+  padding: 3rem 1rem 1rem;
+
+  &__logo {
+    width: 7rem;
+    display: block;
+    filter: brightness(0) invert(100%);
+    margin-bottom: 2rem;
+    transition: all $theme-transition;
+
+    @include media-hover-effect() {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    aspect-ratio: 1/1;
+  }
+
+  &__phone,
+  &__email {
+    width: fit-content;
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: all $theme-transition;
+    color: $theme-white-color;
+
+    @include media-hover-effect {
+      &:hover {
+        color: $theme-bright-blue-color;
+
+        .footer__icon {
+          transition: all $theme-transition;
+          filter: brightness(0) saturate(100%) invert(32%) sepia(48%)
+            saturate(3696%) hue-rotate(217deg) brightness(97%) contrast(100%);
+        }
+      }
+    }
+  }
+
+  .navbar__link {
+    color: $theme-white-color;
+  }
+
+  a:focus-visible {
+    outline-color: $theme-bright-blue-color;
+  }
+
+  // Desktop version
+  @include media-breakpoint-up($screen-md) {
+    padding-inline: 0;
+    padding-top: 6.7rem;
+
+    &__logo {
+      width: 11rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+
+      @include media-breakpoint-up(87.5rem) {
+        grid-template-columns: 1fr 30.5rem 19rem;
+      }
+    }
+
+    .navbar--footer {
+      margin: 0;
+
+      .navbar__item:nth-child(4) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .navbar__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 11rem;
+      column-gap: 4rem;
+    }
+
+    .social__list {
+      justify-content: center;
+    }
+  }
+
+  // Desktop version
+  @include media-breakpoint-up($screen-lg) {
+    .social__list {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.social {
+  &__link {
+    color: $theme-white-color;
+  }
+}
+
+.navbar {
+  &--footer {
+    margin: 3rem 0;
+  }
+
+  &--footer &__item {
+    margin-bottom: 1rem;
+  }
+
+  &--footer &__item:nth-child(4) {
+    margin-bottom: 3rem;
+  }
+
+  &--footer &__link {
+    text-decoration: none;
+    color: $theme-white-color;
+    transition: $theme-transition;
+
+    @include media-hover-effect() {
+      &:hover {
+        color: $theme-bright-blue-color;
+      }
+    }
+  }
+}

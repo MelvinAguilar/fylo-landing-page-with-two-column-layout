@@ -1,0 +1,23 @@
+.social__link {
+  @include size(1.875rem);
+  text-decoration: none;
+
+  border: 0.0625rem solid $theme-white-color;
+  border-radius: 50%;
+  padding: 0.5rem;
+
+  @include flex();
+
+  color: $theme-white-color;
+  font-size: 0.881rem;
+  transition: $theme-transition;
+
+  @include media-hover-effect() {
+    &:hover {
+      transform: scale(1.3);
+      color: $theme-dark-blue-color;
+      border-color: $theme-bright-blue-color;
+      background-color: $theme-bright-blue-color;
+    }
+  }
+}

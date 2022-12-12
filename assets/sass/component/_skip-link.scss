@@ -1,0 +1,14 @@
+.skip-link {
+  position: absolute;
+  left: -624.9375rem;
+  z-index: 999;
+  padding: 1em;
+  background-color: $theme-white-color;
+  color: $theme-dark-blue-color;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  opacity: 1;
+}

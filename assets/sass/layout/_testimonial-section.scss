@@ -1,0 +1,70 @@
+.testimonial {
+  max-width: 30rem;
+  border-radius: 0.7rem;
+  background-color: $theme-white-color;
+  box-shadow: $theme-box-shadow;
+  padding: 1.3rem 1.5rem;
+
+  @include flex(column-reverse, flex-start, flex-start);
+  gap: 1.4rem;
+
+  &__content::before {
+    content: "";
+    background-image: url("../images/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: block;
+    @include size(0.8rem);
+    margin-bottom: 0.5rem;
+  }
+
+  &__author {
+    @include flex(row, flex-start, center);
+    gap: 1rem;
+  }
+
+  &__image {
+    @include size(3rem);
+    border-radius: 50%;
+  }
+
+  &__name {
+    text-align: left;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+
+  &__job {
+    font-size: 0.675rem;
+    color: $theme-desaturated-blue-color;
+  }
+
+  @include media-breakpoint-up($screen-lg) {
+    margin: 1rem 0;
+    max-width: 22.2rem;
+    padding: 1.8rem 2.25rem;
+    gap: 1rem;
+
+    &__content {
+      font-size: 0.855rem;
+      line-height: 1.7;
+    }
+
+    &__image {
+      @include size(2rem);
+    }
+
+    &__name {
+      font-size: 0.7rem;
+      letter-spacing: 0.08rem;
+      margin-bottom: 0;
+    }
+
+    &__author {
+      @include flex(row, flex-start, center);
+      gap: 0.5rem;
+    }
+  }
+}

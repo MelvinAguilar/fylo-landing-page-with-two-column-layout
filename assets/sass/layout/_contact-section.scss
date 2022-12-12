@@ -1,0 +1,57 @@
+.curve-separator {
+  display: block;
+  width: 100%;
+}
+
+.contact {
+  padding: 2.5rem 0.5rem;
+  color: $theme-white-color;
+  background-color: $theme-desaturated-blue-color;
+  text-align: center;
+
+  &__title {
+    color: $theme-white-color;
+  }
+
+  > .container {
+    @include flex(column);
+    gap: 2rem;
+  }
+
+  &__button {
+    font-weight: 400;
+  }
+  // Desktop version
+  @include media-breakpoint-up($screen-lg) {
+    padding: 6.5rem 0 5.35rem 0;
+
+    > .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14.5rem;
+      padding-right: 4.5rem;
+    }
+
+    &__content {
+      text-align: left;
+    }
+
+    &__form {
+      max-width: 30rem;
+    }
+
+    input.contact__input {
+      padding-block: 0.9rem;
+    }
+
+    button.contact__button {
+      max-width: 12.5rem;
+    }
+
+    &__description {
+      font-size: 1.07rem;
+      margin-top: 1.15rem;
+      line-height: 1.49;
+    }
+  }
+}

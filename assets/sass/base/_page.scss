@@ -1,0 +1,13 @@
+body {
+  font-family: $theme-text-font;
+  color: $theme-dark-blue-color;
+  background-color: $theme-white-color;
+  overflow-x: hidden;
+}
+
+:is(a, button, input, textarea, select, details, summary) {
+  &:focus-visible {
+    outline: $theme-dark-blue-color dotted 0.188rem;
+    outline-offset: 0.188rem; //0.063rem
+  }
+}

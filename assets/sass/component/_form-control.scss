@@ -1,0 +1,62 @@
+.form-control {
+  position: relative;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0.625rem;
+    border-radius: 0.3rem;
+    border: 0.063rem solid $theme-dark-blue-color;
+  }
+
+  .btn {
+    margin: 0.8rem 0;
+    height: 3rem;
+  }
+
+  input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: $theme-bright-blue-color;
+    background: rgb(255, 230, 234);
+  }
+
+  input[type="email"]:invalid:focus:not(:placeholder-shown) {
+    & ~ .introduction__error-message {
+      opacity: 1;
+    }
+  }
+
+  .introduction__error-message {
+    position: absolute;
+    bottom: -1rem;
+
+    opacity: 0;
+    transition: all 0.28s ease-in-out;
+    color: rgb(255, 13, 13);
+    font-style: italic;
+
+    .contact & {
+      color: rgb(241, 241, 241);
+    }
+  }
+
+  @include media-breakpoint-up($screen-lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .introduction & {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr;
+      gap: 1rem;
+      margin-block: 0.3rem 1rem;
+
+      .btn {
+        margin: 0;
+      }
+    }
+
+    .introduction__error-message {
+      bottom: -1.8rem;
+    }
+  }
+}

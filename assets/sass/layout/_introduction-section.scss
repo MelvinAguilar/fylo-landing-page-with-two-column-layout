@@ -1,0 +1,56 @@
+.introduction {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  &__content {
+    margin-top: 3.7rem;
+    @include flex(column);
+    gap: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  &__image {
+    max-width: 22rem;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up($screen-md) {
+    margin-bottom: 10.3rem;
+    @include flex(row-reverse);
+    gap: 3rem;
+    text-align: left;
+    margin-top: 3rem;
+
+    &__image {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    &__content {
+      flex: 50%;
+      align-items: flex-start;
+      margin-top: -1.85rem;
+      gap: 1rem;
+    }
+
+    &__title {
+      line-height: 1.5;
+    }
+
+    &__description {
+      font-size: 1.13rem;
+    }
+
+    &__form {
+      width: 90%;
+    }
+  }
+
+  @include media-breakpoint-up($screen-lg) {
+    &__title {
+      font-size: 2.51rem;
+      line-height: 1.5;
+    }
+    margin-top: 1.5rem;
+  }
+}

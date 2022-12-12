@@ -1,0 +1,50 @@
+.header {
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.3rem 1rem;
+  margin-bottom: 1rem;
+
+  &__logo {
+    max-width: 7rem;
+    object-fit: contain;
+    display: block;
+
+    transition: all $theme-transition;
+
+    // Solve the sticky hover effect on mobile devices with @media (hover: hover)
+    @include media-hover-effect() {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Navigation menu in header
+.navbar {
+  &__link {
+    color: $theme-dark-blue-color;
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-up($screen-rwd) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
+@include media-breakpoint-up($screen-lg) {
+  .header {
+    padding: 4rem 5rem;
+
+    &__logo {
+      max-width: initial;
+    }
+
+    .navbar__list {
+      gap: 3.6rem;
+    }
+  }
+}

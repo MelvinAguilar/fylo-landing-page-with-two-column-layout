@@ -1,0 +1,76 @@
+.feature {
+  padding-bottom: 5.5rem;
+  position: relative;
+  background-color: $theme-grayish-gray-color;
+  text-align: center;
+
+  &__content {
+    margin-top: 3rem;
+    @include flex(column);
+    gap: 2rem;
+  }
+
+  &__link {
+    @include after-icon("../images/icon-arrow.svg");
+    height: 1.7rem;
+    border-bottom: 0.063rem solid $theme-cyan-color;
+
+    @include media-hover-effect() {
+      &:hover {
+        color: darken($theme-cyan-color, 30%);
+        border-bottom-color: darken($theme-cyan-color, 30%);
+      }
+    }
+  }
+
+  &__link,
+  .btn {
+    font-weight: 400;
+  }
+
+  &__image {
+    max-width: 22rem;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up($screen-md) {
+    text-align: left;
+
+    > .container {
+      @include flex(row-reverse, flex-start, flex-start);
+      gap: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up($screen-lg) {
+    &__title {
+      font-size: 2.54rem;
+      margin-bottom: 0.7rem;
+    }
+
+    &__description {
+      margin-right: 9.5rem;
+    }
+
+    &__image {
+      max-width: 42.5%;
+      margin-top: 5.5rem;
+    }
+
+    &__content {
+      align-items: flex-start;
+      margin-top: 4rem;
+      gap: 1.4rem;
+    }
+
+    &__link {
+      letter-spacing: 0.1ch;
+    }
+  }
+}
+
+@include media-breakpoint-up($screen-md) {
+  .curve-separator {
+    content: url("../images/bg-curve-desktop.svg");
+  }
+}

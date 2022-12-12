@@ -1,0 +1,11 @@
+.horizontal-list {
+  @include flex(row);
+  flex-wrap: wrap;
+
+  padding-inline-start: 0;
+  gap: 1rem;
+
+  > li {
+    display: block;
+  }
+}

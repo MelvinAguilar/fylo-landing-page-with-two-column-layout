@@ -1,0 +1,23 @@
+.attribution {
+  margin-top: 1rem;
+  text-align: center;
+  color: $theme-white-color;
+  font-size: 0.588rem;
+
+  a {
+    text-decoration: none;
+    color: $theme-cyan-color;
+
+    @include media-hover-effect {
+      &:hover {
+        color: lighten($theme-cyan-color, 20%);
+      }
+    }
+  }
+
+  @include media-breakpoint-up($screen-lg) {
+    margin-top: 0;
+    font-size: 0.788rem;
+    position: initial;
+  }
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400&display=swap");
+
+// Font Family
+$theme-text-heading-font: "Raleway", sans-serif;
+$theme-text-font: "Open Sans", sans-serif;
+
+// Primary colors
+$theme-dark-blue-color: hsl(243, 87%, 12%);
+$theme-desaturated-blue-color: hsl(238, 22%, 44%);
+
+// Accent colors
+$theme-bright-blue-color: hsl(224, 93%, 58%);
+$theme-cyan-color: hsl(170, 45%, 43%);
+
+// Neutrals colors
+$theme-grayish-gray-color: hsl(240, 75%, 98%);
+$theme-gray-color: hsl(0, 0%, 75%);
+$theme-white-color: hsl(0, 0%, 100%);
+
+// Transition
+$theme-transition: 0.2s ease-in-out;
+
+// Breakpoints
+$screen-sm: 36em; //576px Large smartphones
+$screen-md: 48em; //768px Small tablets
+$screen-lg: 62em; //992px Tabletsff
+$screen-xl: 75em; //1200px Desktops
+$screen-xxl: 87.5em; //1400px Large desktops
+$screen-rwd: 25.3125em; // Custom device
+
+// Border shadow
+$theme-box-shadow: 0 0.063rem 0.188rem rgba($theme-dark-blue-color, 0.12),
+  0 0.063rem 0.125rem rgba($theme-dark-blue-color, 0.24);
+$theme-box-shadow-hover: 0 0.875rem 1.75rem rgba($theme-dark-blue-color, 0.25),
+  0 0.625rem 0.625rem rgba($theme-dark-blue-color, 0.22);

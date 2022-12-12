@@ -1,0 +1,90 @@
+.btn {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+
+  box-shadow: $theme-box-shadow;
+
+  text-decoration: none;
+  transition: $theme-transition;
+  overflow: hidden;
+  color: $theme-white-color;
+  position: relative;
+
+  &--primary {
+    width: 100%;
+    border: none;
+    border-radius: 0.3rem;
+
+    background-color: $theme-bright-blue-color;
+  }
+
+  &--secondary {
+    color: $theme-cyan-color;
+    box-shadow: none;
+  }
+
+  @include media-hover-effect() {
+    &:not(.feature__link):hover {
+      transform: scale(1);
+      box-shadow: $theme-box-shadow-hover;
+      background-size: 110% 60%;
+    }
+  }
+
+  //hover efect with the transform origin in mouse position
+  &:not(.feature__link):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+    background-color: lighten($theme-bright-blue-color, 10%);
+    z-index: -1;
+    transition: $theme-transition;
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+
+  &:hover:before {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1);
+  }
+}
+
+.navbar__link,
+.footer__address a {
+  position: relative;
+}
+
+.navbar__link::before,
+.footer__address a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  border-radius: 0.25rem;
+  background-color: #18272f;
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+
+  footer & {
+    background-color: $theme-bright-blue-color;
+  }
+}
+
+@include media-hover-effect() {
+  .navbar__link:hover::before,
+  .footer__address a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+}
