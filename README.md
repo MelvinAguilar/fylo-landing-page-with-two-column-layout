@@ -1,6 +1,39 @@
-# Frontend Mentor - Fylo landing page with two column layou
+<div id="top"></div>
+
+<div align="center">
+  <h2 align="center">Fylo landing page with two column layout</h2>
+  <p align="center">
+    <a href="https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-WRPVqmFCKD"><strong>Frontend Mentor Challenge</strong></a>
+    <br />
+    <br />
+    <a href="https://fylo-landing-page-with-two-column-layout-hdez.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/MelvinAguilar/fylo-landing-page-with-two-column-layout/issues" target="_blank">Report Bug</a>
+    ·
+    <a href="https://github.com/MelvinAguilar/fylo-landing-page-with-two-column-layout/issues" target="_blank">Request Feature</a>
+  </p>
+</div>
+
+<!-- Bagdes -->
+<div align="center">
+  <!-- Profile -->
+  <a href="https://www.frontendmentor.io/profile/MelvinAguilar">
+    <img src="https://img.shields.io/badge/Profile-Melvin%20Aguilar-07043B?style=for-the-badge&logo=frontendmentor" alt="Melvin Profile">
+  </a>
+  <!-- Status -->
+  <a href="#">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
+  </a>
+
+</div>
+
+#
+
+<div align="center">
 
 ![](./design/desktop-preview.jpg)
+
+</div>
 
 This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -37,6 +70,14 @@ Your users should be able to:
 
 ### Built with
 
+<!-- Bagdes -->
+
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=sass&logoColor=white)
+![](https://img.shields.io/badge/BEM-black?style=for-the-badge&logo=bem&logoColor=white)
+![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
 - Semantic HTML5 markup
 - Mobile-first approach
 - Flex Layout
@@ -45,6 +86,7 @@ Your users should be able to:
 
 ### Useful resources
 
+- [A11Y 101: Ensure landmarks are unique](https://daily-dev-tips.com/posts/a11y-101-ensure-landmarks-are-unique/)
 - [Mobile-first approach](https://www.freecodecamp.org/news/taking-the-right-approach-to-responsive-web-design/)
 - [CSS Guidelines](https://cssguidelin.es/#bem-like-naming)
 - [BEM naming convention](https://css-tricks.com/bem-101/)
